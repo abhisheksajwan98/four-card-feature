@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body{
+    font-family: "Poppins",sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+h1,h2 {
+    color:  hsl(234, 12%, 34%);
+}
+
+h1 span {
+    font-weight: 200;
+}
+
+p {
+    line-height: 1.8;
+    color: hsl(229, 6%, 66%);
+}
+
+main > article:first-child{
+    margin: 5%;
+    text-align: center;
+}
+
+main > article:first-child h1{
+    margin: 3%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+}
+
+.cards article{
+    background-color: #fff;
+    box-shadow: 0 0 5px hsl(180, 62%, 55%,0.2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.cards h2{
+    font-size: 2rem;
+}
+
+.cards article:first-child{
+    border-top: 0.5rem solid hsl(0, 78%, 62%);
+}
+
+.cards article:nth-child(2){
+    border-top: 0.5rem solid hsl(180, 62%, 55%);
+}
+
+.cards article:nth-child(3){
+    border-top: 0.5rem solid hsl(34, 97%, 64%);
+}
+
+.cards article:nth-child(4){
+    border-top: 0.5rem solid hsl(212, 86%, 64%);
+}
+
+.cards article img{
+    display: block;
+    margin-left: auto;
+}
+
+/* @media (min-width: 768px){
+    main > article {
+        max-width: 500px;
+        margin: auto;
+    }
+} */
+
+main > article:first-child h1{
+    font-size: 3rem;
+}
+
+.cards{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.cards article{
+    /* flex: 1; */
+    width: 300px;
+}
+
+main .cards article:first-child,
+main .cards article:nth-child(3) {
+    transform: translateY(50%);
+}
